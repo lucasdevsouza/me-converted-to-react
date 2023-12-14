@@ -1,0 +1,224 @@
+@font-face {
+    font-family:'Font' ;
+    src: url('./ChristmasSpark.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+}
+li, a{
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --color-dark:white;
+    --backdround-dark: #171717;;
+    --col: #e4e4e7;
+    --col-logo: #c026d3;
+}
+body{
+
+background-color: var(--backdround-dark);
+}
+nav {
+    z-index: 99;
+    padding: 11pt 15pt;
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    max-width: 1054px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(104, 103, 103, 0.3);
+    
+}
+
+nav ul {
+    display: flex;
+    gap: 10pt;
+}
+
+nav ul li div a{
+    color:var(--col);
+    font-size: 19pt;
+
+}
+
+@media (max-width:648px) {
+  nav ul li div a{
+    color:var(--col);
+    font-size: 14pt;
+  }
+}
+@media (max-width:463px) {
+  nav {
+    top: auto; 
+    bottom: 0;
+  };
+  nav ul {
+    display: flex;
+    gap: 12pt;
+    padding: 4pt 15pt;
+}
+  nav ul li div a{
+    color:var(--col);
+    font-size: 10pt;
+  }
+  nav ul li div a{
+    font-size: 8pt;
+  }
+}@media (max-width:324.40px) {
+  nav{
+    padding: 3pt 15pt;
+  }
+  nav ul {
+    display: flex;
+    gap: 10pt;
+    padding: 4pt 15pt;
+}
+  nav ul li div a{
+    color:var(--col);
+    font-size: 9pt;
+
+  }
+}
+
+
+.hoverme:hover{
+    color:rgba(233, 233, 233, 0.877);
+
+    
+}
+nav ul:nth-child(1) li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--col-logo);
+}
+nav ul:nth-child(1) li a strong{
+    text-decoration: line-through;
+
+}
+  .pricing-plans {
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 100%; */
+    padding: 64px;
+  }
+  
+  .pricing-card {
+    position: relative;
+    min-width: 360px;
+    padding: 32px;
+    padding-bottom: 96px;
+    border-radius: 4px;
+    border: 1px solid #262626;
+    background-color: #26262620;
+    box-shadow: 0 0 32px transparent;
+    text-align: center;
+  }
+  
+  .pricing-card.basic {
+    --col: #0891b2;
+  }
+  
+  .pricing-card.standard {
+    --col: #059669;
+  }
+  
+  .pricing-card.premium {
+    --col: #c026d3;
+  }
+  
+  .pricing-card:hover {
+    border-color: var(--col);
+    background-color: #26262680;
+    box-shadow: 0 0 32px #171717;
+    transition: all 0.5s ease;
+  }
+  
+  .pricing-card > *:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  
+  .pricing-card .heading h4 {
+    padding-bottom: 12px;
+    color: var(--col);
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .pricing-card .heading p {
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  
+  .pricing-card .price {
+    position: relative;
+    color: var(--col);
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .pricing-card .price sub {
+    position: absolute;
+    bottom: 14px;
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+  
+  .pricing-card .features li {
+    padding-bottom: 16px;
+    color: #a3a3a3;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: left;
+  }
+  
+  .pricing-card .features li i,
+  .pricing-card .features li strong {
+    color: #e4e4e7;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .pricing-card .features li strong {
+    padding-left: 24px;
+  }
+  
+  .pricing-card .cta-btn {
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--col);
+    background-color: var(--col);
+    color: #e4e4e7;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .pricing-card .cta-btn:active {
+    background-color: transparent;
+    color: var(--col);
+    transition: all 0.3s ease;
+  }
+  
